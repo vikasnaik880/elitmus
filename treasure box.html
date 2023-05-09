@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Treasure Box</title>
+	<h3>Enter the previous game answers to unlock the treasure</h3>
+	<style>
+        
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			background-image:url("https://media.istockphoto.com/id/1160778039/photo/treasure-chest-open-ancient-trunk-with-glowing-magic-lights-in-the-dark.jpg?s=612x612&w=0&k=20&c=yMQNCICQAzZQYXK09nTnIzKs22A7j5zLqo-cTkTO134=");
+			background-repeat: no-repeat;
+			background-size: 1500px;
+		}
+
+		.box-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 20px;
+			background-color: burlywood;
+		}
+
+
+		.submit-button {
+			display: block;
+			margin: 0 auto;
+			padding: 10px 20px;
+			background-color: blue;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+            margin-top: 10px;
+		}
+
+		.dialog-box {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 300px;
+			height: 200px;
+			background-color:aqua;
+			border: 1px solid black;
+			padding: 20px;
+			display: none;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Treasure Box</h1>
+		<div class="box-container">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+		<form id="number-form">
+			<input type="number" id="number-input" min="100" max="999" required>
+			<button type="submit" class="submit-button">Submit</button>
+		</form>
+		<div class="dialog-box" id="dialog-box">
+			<h2>You won!</h2>
+			<p>Congratulations, you have found the treasure!</p>
+			<button type="button" id="close-button">Close</button>
+		</div>
+	</div>
+
+	<script>
+		// Get the number input and form elements
+		const numberInput = document.getElementById('number-input');
+		const numberForm = document.getElementById('number-form');
+
+		// Get the dialog box and close button elements
+		const dialogBox = document.getElementById('dialog-box');
+		const closeButton = document.getElementById('close-button');
+
+		// Add a listener to the form submit event
+		numberForm.addEventListener('submit', (event) => {
+			event.preventDefault(); // Prevent the default form submission
+
+			const number = parseInt(numberInput.value); // Get the entered number
+
+			if (number === 693) {
+				dialogBox.style.display = 'block'; // Show the dialog box if the number is correct
+			}
+		});
+		closebutton.addEventListener('click', function() {
+   		 // Redirect to another page
+    		window.location.href = "home.html";
+		});
+	</script>
+</body>
+</html>
