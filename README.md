@@ -1,7 +1,7 @@
 # elitmus
 TREASURE HUNT GAME
 
-1.The game has a sign-in option where users can enter with username and password to login.
+1.The game has a sign-in option where users can enter with username and password to login. username: admin, password: password
 
 2.Once the user is logged in, they are redirected to the home page which has a "Play" button, an "Instructions" button, and an "Exit" button. Clicking the "Play" button takes the user to a page with a series of hint boxes.
 
