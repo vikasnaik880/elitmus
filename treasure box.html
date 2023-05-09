@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Treasure Box</title>
+	<style>
+        .body {
+            
+			background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F006%2F661%2F786%2Foriginal%2Fgold-retro-antique-treasure-or-treasure-chest-luxuriously-expensive-chest-for-holding-gold-valuables-3d-rendering-free-photo.jpg&tbnid=XOfHpIXAHJsDGM&vet=1&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-photos%2Ftreasure-chest&docid=X45VCKvS6L5I6M&w=5000&h=3000&source=sh%2Fx%2Fim");
+        }
+		
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+            
+		}
+
+		.box-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 20px;
+			background-color: burlywood;
+		}
+
+		.box {
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+			margin: 0 10px;
+		}
+
+		.submit-button {
+			display: block;
+			margin: 0 auto;
+			padding: 10px 20px;
+			background-color: blue;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+            margin-top: 10px;
+		}
+
+		.dialog-box {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 300px;
+			height: 200px;
+			background-color: rgb(255, 254, 253);
+			border: 1px solid black;
+			padding: 20px;
+			display: none;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Treasure Box</h1>
+		<div class="box-container">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+		<form id="number-form">
+			<input type="number" id="number-input" min="100" max="999" required>
+			<button type="submit" class="submit-button">Submit</button>
+		</form>
+		<div class="dialog-box" id="dialog-box">
+			<h2>You won!</h2>
+			<p>Congratulations, you have found the treasure!</p>
+			<button type="button" id="close-button">Close</button>
+		</div>
+	</div>
+
+	<script>
+		// Get the number input and form elements
+		const numberInput = document.getElementById('number-input');
+		const numberForm = document.getElementById('number-form');
+
+		// Get the dialog box and close button elements
+		const dialogBox = document.getElementById('dialog-box');
+		const closeButton = document.getElementById('close-button');
+
+		// Add a listener to the form submit event
+		numberForm.addEventListener('submit', (event) => {
+			event.preventDefault(); // Prevent the default form submission
+
+			const number = parseInt(numberInput.value); // Get the entered number
+
+			if (number === 693) {
+				dialogBox.style.display = 'block'; // Show the dialog box if the number is correct
+			}
+		});
+
+		// Add a listener to the close button click event
+		closeButton.addEventListener('click', () => {
+			dialogBox.style.display = 'none'; // Hide the dialog box when the close button is clicked
+		});
+	</script>
+</body>
+</html>

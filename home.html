@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   <link rel="stylesheet" type="text/css" href="modal.css">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treasure Hunt Home Page</title>
+  <style>
+    /* CSS styles */
+    body {
+        background-color: #f2f2f2;
+      text-align: center;
+      font-family: Goudy Stout, sans-serif;
+    }
+
+    h1 {
+      color: rgb(255, 149, 0);
+    }
+    
+
+    .container {
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      background-image: url('treasure-chest-open-ancient-trunk-glowing-magic-lights-dark-154769850.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+
+    .button {
+      background-color: #4caf59;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .button-small {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+
+    .left-corner {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .right-corner {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    button {
+      background-color: #4caf59;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      margin: 10px;
+      cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Treasure Hunt</h1>
+    <a href="test.html" class="button">Play</a>
+    <button id="myButton">Instructions</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Select a hint box. Each hint box redirects to a different game. Finish all the game to get to the treasure box. Use these clues to find the password of treasure box</p>
+      </div>
+    </div>
+    <script src="modal.js"></script>
+  </div>
+    <!-- <a href="instru.html" class="button button-small right-corner">Instructions</a> -->
+    <a href="sign in.html" class="button button-small left-corner">Exit</a>
+</body>

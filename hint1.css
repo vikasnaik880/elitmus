@@ -1,0 +1,22 @@
+/* Game Dashboard */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: brown;
+    color: #fff;
+    font-size: 20px;
+    align-content: center;
+}
+
+.dashboard h2 {
+    margin: 0;
+}
+
+/* Game Canvas */
+/*#game-canvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #333;
+}*/

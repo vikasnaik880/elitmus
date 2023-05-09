@@ -1,0 +1,44 @@
+.container {
+  border: 2px solid black;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.box {
+  border: 1px solid black;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.input {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: fixed;
+  align-items: center;
+}

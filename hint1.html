@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find the differences in the images</title>
+    <link rel="stylesheet" href="hint1.css">
+    <style>
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+            background-color: darksalmon;
+		}
+        .button {
+			background-color: blue;
+			color: white;
+			padding: 10px;
+			position: fixed;
+			bottom: 10px;
+			right: 10px;
+            font-size: medium;
+		}
+		.button1 {
+			background-color: blue;
+			color: white;
+			padding: 10px;
+			position: fixed;
+			bottom: 10px;
+			left: 10px;
+            font-size: medium;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+
+		.image {
+			display: block;
+			width: 50%;
+			height: auto;
+			object-fit: cover;
+		}
+
+		.text {
+			text-align: center;
+			font-size: 30px;
+			font-weight: bold;
+            font-style: normal;
+		}
+	</style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="timer">
+            <h2>Time Remaining:</h2>
+            <p id="time-value">60</p>
+        </div>
+    </div>
+    <div class="container">
+		<img class="image" src="image1.jpeg" alt="Image 1">
+		<img class="image" src="image2.jpeg" alt="Image 2">
+	</div>
+	<div class="text">Find the number of differences in the two images and memorise the answer</div>
+    <button class="button">Click Me!</button>
+	<button class="button1">HOME</button>
+    <script src="hint1.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+#game-container {
+    width: 400px;
+    margin: 0% auto;
+    text-align: center;
+    padding: 20px;
+    border: 20px solid sandybrown;
+    background-color: aqua;
+  }
+ 
+  h1 {
+    font-size: 36px;
+  }
+  
+  p {
+    font-size: 24px;
+  }
+  
+  input {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  button {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  #result {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
